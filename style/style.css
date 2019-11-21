@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1900px;
+  height: 650px;
+  background: url("/img/currency.jpg");
+}
+
+.header-title h1 {
+  text-shadow: 1px 1px 0 rgba(155, 155, 155, 0.3);
+  color: #ecf0f1;
+  font-family: Raleway;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 92px;
+}
+/*# sourceMappingURL=style.css.map */
