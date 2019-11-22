@@ -11,9 +11,32 @@
 <body>
     <header class="header">
         <div class="header-title">
-            <h1>Top 100 Cryptocurrencies <br> by Market Capitalization</h1>
+            <div class="header-text">
+                <h1>Top 100 Cryptocurrencies <br> by Market Capitalization</h1>
+            </div>
         </div>
         <!-- /.header-title -->
     </header>
+    <section class="section-content">
+        <div class="currency-content">
+            <table class="currency_table">
+            <tr>
+                <th>#</th>
+                <th>name:</th>
+                <th>price_usd:</th>
+                <th>price_btc:</th>
+                <th>total_supply:</th>
+                <th>max_supply:</th>
+                <th>percent_change_1h:</th>
+                <th>percent_change_24h:</th>
+                <th>percent_change_7d:</th>
+            </tr>
+            </table>
+            <table id="currency">
+            </table>
+        </div>
+    </section>    
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
