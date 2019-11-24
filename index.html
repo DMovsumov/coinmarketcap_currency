@@ -11,9 +11,31 @@
 <body>
     <header class="header">
         <div class="header-title">
-            <h1>Top 100 Cryptocurrencies <br> by Market Capitalization</h1>
+            <div class="header-text">
+                <h1>Top 100 Cryptocurrencies <br> by Market Capitalization</h1>
+            </div>
         </div>
         <!-- /.header-title -->
     </header>
+    <section class="section-content">
+        <div class="currency-content">
+            <table id="currency">
+                <tr class="currency_info">
+                    <th>#</th>
+                    <th>name:</th>
+                    <th>price_usd: <select class="pirce_usd"></select></th>
+                    <th>price_btc:</th>
+                    <th>total_supply:</th>
+                    <th>max_supply:</th>
+                    <th>percent_change_1h:</th>
+                    <th>percent_change_24h:</th>
+                    <th>percent_change_7d:</th>
+                </tr>
+            </table>
+        </div>
+    </section>    
+
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/b06e20d485.js" crossorigin="anonymous"></script>
 </body>
 </html>
