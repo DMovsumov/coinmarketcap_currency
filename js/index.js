@@ -1,8 +1,8 @@
 const url = 'https://api.coinmarketcap.com/v1/ticker/'
-const options = document.querySelector('.pirce_usd')
-const currency = ['USD' ,'RUB', 'EURO', 'GBP', 'JPY', 'CHF']
-let item = document.createElement('option')
-let price_usd = document.querySelectorAll('.price_usdConv')
+// const options = document.querySelector('.pirce_usd')
+// const currency = ['USD' ,'RUB', 'EURO', 'GBP', 'JPY', 'CHF']
+// let item = document.createElement('option')
+// let price_usd = document.querySelectorAll('.price_usdConv')
 
 function load() {    
     fetch(url)
@@ -23,38 +23,34 @@ function load() {
 }
 load()
 
-function currency_select() {    
-    for(let i =0; i < currency.length; i++){
-        item.text = currency[i]
-        item.value = currency[i]
-        options.appendChild(item.cloneNode(true))        
-    }     
-}
 
-currency_select()
 
-function converterUsd() {
-    fetch(url)
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-            let price_usdConvert = data.map((item) => {
-                return item.price_usd
-            })
-            return price_usdConvert     
-        })             
-}
+// currency_select()
 
-converterUsd()
+// function converterUsd() {
+//     fetch(url)
+//         .then((response) => {
+//             return response.json()
+//         })
+//         .then((data) => {
+//             let price_usdConvert = data.map((item) => {
+//                 return item.price_usd
+//             })
+//             return price_usdConvert     
+//         })              
+// }
 
-function converter(price) {
-    options.addEventListener('change', () => {
-        if(options.value == 'RUB'){
-            for(let i = 0; i < price.length; i++)
-            return price[i] * 63 // 6000 для примера
-        } else {
-            return price
-        }
-    })
-}
+// converterUsd()
+
+// function converter(price) {
+//     options.addEventListener('change', () => {
+//         if(options.value == 'RUB'){
+//             for(let i = 0; i < price.length; i++)
+//             return price[i] * 63 
+//         } else {
+//             return price.forEach(element => {
+//                 return element
+//             });
+//         }
+//     })
+// }
